@@ -65,5 +65,10 @@ public static final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";
 
     }
 
+    @GetMapping(value="/payment/zipkin")
+    public String paymentZipkin() {
+        return restTemplate.getForObject( "http://localhost:8001/payment/zipkin/",String.class);
+    }
+
 
 }
