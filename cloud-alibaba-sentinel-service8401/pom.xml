@@ -9,13 +9,17 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloud-alibaba-provider-payment3</artifactId>
-
+    <artifactId>cloud-alibaba-sentinel-service8401</artifactId>
     <dependencies>
         <!-- SpringCloud ailibaba nacos-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+        <!-- SpringCloud ailibaba sentinel-datasource-nacos 持久化需要用到-->
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-datasource-nacos</artifactId>
         </dependency>
         <!-- SpringCloud ailibaba sentinel-->
         <dependency>
@@ -58,4 +62,5 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
 </project>
