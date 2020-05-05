@@ -16,7 +16,6 @@ import java.util.HashMap;
  * @description：
  */
 @RestController
-@RequestMapping("payment")
 public class PaymentController {
 
     @Value("${server.port}")

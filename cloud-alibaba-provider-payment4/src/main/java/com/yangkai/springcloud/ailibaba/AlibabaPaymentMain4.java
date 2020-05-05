@@ -11,9 +11,9 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-public class AlibabaPaymentMain3 {
+public class AlibabaPaymentMain4 {
 
     public static void main(String[] args) {
-        SpringApplication.run(AlibabaPaymentMain3.class,args);
+        SpringApplication.run(AlibabaPaymentMain4.class,args);
     }
 }

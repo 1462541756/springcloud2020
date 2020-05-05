@@ -21,6 +21,7 @@ import javax.annotation.Resource;
  */
 @RestController
 @Slf4j
+@RequestMapping("consumer")
 public class CircleBreakerController {
 
     public static  final  String SERVICE_URL = "http://nacos-payment-provider";
@@ -28,10 +29,10 @@ public class CircleBreakerController {
     @Resource
     private RestTemplate restTemplate;
 
-    @RequestMapping("/consumer/fallback/{id}")
+    @RequestMapping("/fallback/{id}")
 //    @SentinelResource(value = "fallback")
 //    @SentinelResource(value = "fallback",fallback ="handlerFallback")
-    @SentinelResource(value = "fallback",fallback ="handlerFallback",blockHandler = "blockHandler")
+    @SentinelResource(value = "fallback",fallback ="handlerFallback",blockHandler = "blockHandler",exceptionsToIgnore = {IllegalArgumentException.class})
     public CommonResult<Payment> fallback(@PathVariable Long id) {
         CommonResult<Payment> result = restTemplate.getForObject(SERVICE_URL + "/paymentSQL/" + id,CommonResult.class,id);
 
@@ -60,7 +61,7 @@ public class CircleBreakerController {
     @Resource
     private PaymentService paymentService;
 
-    @GetMapping(value = "/consumer/paymentSQL/{id}")
+    @GetMapping(value = "/paymentSQL/{id}")
     public CommonResult< Payment > paymentSQL(@PathVariable("id") Long id){
         return paymentService.paymentSQL(id);
     }
