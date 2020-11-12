@@ -25,7 +25,7 @@ public class OrderController {
     @Resource
     private PaymentService paymentService;
 
-//    @GetMapping("/payment/hystrix/timeout/{id}")
+    @GetMapping("/payment/hystrix/timeout/{id}")
 //    @HystrixCommand(fallbackMethod = "paymentInfo_TimeoutFallbackMethod",commandProperties = {
 //            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds",value = "2000")
 //    })

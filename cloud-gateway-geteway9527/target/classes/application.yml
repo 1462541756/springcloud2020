@@ -25,7 +25,6 @@ spring:
           - After=2020-03-12T15:44:15.064+08:00[Asia/Shanghai]
           #- Cookie=username,yangkai   #带Cookie，并且username的值为yangkai(正则表达式)
           #- Header=X-Request-Id,\d+ #请求头要有 X-Request-Id属性并且值为整数的正则表达式
-
 eureka:
   instance:
     hostname: cloud-gateway-service

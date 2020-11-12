@@ -1,0 +1,20 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: cloud-zuul
+
+eureka:
+  instance:
+    instance-id: zuul9527
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
+zuul:
+  routes:
+    payment.serviceId: cloud-provider-hystrix-payment  #原来的服务访问地址
+    payment.path: /consumer/**        #新的访问地址
+#  ignored-services: cloud-provider-hystrix-payment   #隐藏一个服务，不能通过 cloud-provider-hystrix-payment
+  ignored-services: "*"   #隐藏所有服务，只能通过 consumer访问
+#  prefix: /kai  #公访问前缀，http://localhost:8088/consumer/payment/hystrix/ok/1  ---> http://localhost:8088/kai/consumer/payment/hystrix/ok/1

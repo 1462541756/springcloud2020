@@ -26,6 +26,7 @@
         <module>cloud-consumer-feign-hystrix-order</module>
         <module>cloud-consumer-hystrix-dashboard</module>
         <module>cloud-gateway-geteway9527</module>
+        <module>cloud-gateway-zuul9527</module>
         <module>cloud-config-center</module>
         <module>cloud-config-client</module>
         <module>cloud-config-client2</module>
@@ -72,7 +73,7 @@
         </site>
     </distributionManagement>
 
-    <!-- 子模块继承之后，提供作用：锁定版本 + 子module不用谢groupId和version -->
+    <!-- 子模块继承之后，提供作用：锁定版本 + 子module不用写version -->
     <dependencyManagement>
         <dependencies>
             <!--spring boot 2.2.2-->

@@ -34,10 +34,12 @@ public class PaymentController {
     }
 
     @GetMapping("/hystrix/timeout/{id}")
-    public String paymentInfo_Timeout(@PathVariable("id") Integer id) {
+    public String paymentInfo_Timeout(@PathVariable("id") Integer id) throws Exception {
+//        throw new Exception();
         String result = paymentService.paymentInfo_Timeout(id);
         log.info("*****result: " + result);
         return result;
+
     }
 
     @GetMapping("/circuit/{id}")

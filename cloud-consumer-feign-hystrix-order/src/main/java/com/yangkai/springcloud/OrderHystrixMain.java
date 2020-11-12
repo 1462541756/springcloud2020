@@ -2,6 +2,7 @@ package com.yangkai.springcloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
@@ -12,7 +13,8 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  */
 @SpringBootApplication
 @EnableFeignClients
-@EnableHystrix
+@EnableHystrix  //开启hystrix
+//@EnableCircuitBreaker  //开启断路器
 public class OrderHystrixMain {
     public static void main(String[] args) {
         SpringApplication.run(OrderHystrixMain.class,args);
