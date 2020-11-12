@@ -1,0 +1,11 @@
+G:\微服务框架学习\springcloud\seata-order-service\src\main\java\com\yangkai\springcloud\alibaba\entity\CommonResult.java
+G:\微服务框架学习\springcloud\seata-order-service\src\main\java\com\yangkai\springcloud\alibaba\SeataOrderMainApp2001.java
+G:\微服务框架学习\springcloud\seata-order-service\src\main\java\com\yangkai\springcloud\alibaba\config\MyBatisConfig.java
+G:\微服务框架学习\springcloud\seata-order-service\src\main\java\com\yangkai\springcloud\alibaba\dao\OrderDao.java
+G:\微服务框架学习\springcloud\seata-order-service\src\main\java\com\yangkai\springcloud\alibaba\entity\Order.java
+G:\微服务框架学习\springcloud\seata-order-service\src\main\java\com\yangkai\springcloud\alibaba\service\impl\OrderServiceImpl.java
+G:\微服务框架学习\springcloud\seata-order-service\src\main\java\com\yangkai\springcloud\alibaba\config\DataSourceProxyConfig.java
+G:\微服务框架学习\springcloud\seata-order-service\src\main\java\com\yangkai\springcloud\alibaba\service\OrderService.java
+G:\微服务框架学习\springcloud\seata-order-service\src\main\java\com\yangkai\springcloud\alibaba\service\AccountService.java
+G:\微服务框架学习\springcloud\seata-order-service\src\main\java\com\yangkai\springcloud\alibaba\service\StorageService.java
+G:\微服务框架学习\springcloud\seata-order-service\src\main\java\com\yangkai\springcloud\alibaba\controller\OrderController.java

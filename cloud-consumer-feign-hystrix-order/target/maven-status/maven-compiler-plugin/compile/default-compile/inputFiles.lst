@@ -1,0 +1,4 @@
+G:\微服务框架学习\springcloud\cloud-consumer-feign-hystrix-order\src\main\java\com\yangkai\springcloud\controller\OrderController.java
+G:\微服务框架学习\springcloud\cloud-consumer-feign-hystrix-order\src\main\java\com\yangkai\springcloud\service\PaymentFallbackService.java
+G:\微服务框架学习\springcloud\cloud-consumer-feign-hystrix-order\src\main\java\com\yangkai\springcloud\OrderHystrixMain.java
+G:\微服务框架学习\springcloud\cloud-consumer-feign-hystrix-order\src\main\java\com\yangkai\springcloud\service\PaymentService.java

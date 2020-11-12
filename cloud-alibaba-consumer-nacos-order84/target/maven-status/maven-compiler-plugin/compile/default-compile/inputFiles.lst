@@ -1,0 +1,5 @@
+G:\微服务框架学习\springcloud\cloud-alibaba-consumer-nacos-order84\src\main\java\com\yangkai\springcloud\alibaba\OrderMain84.java
+G:\微服务框架学习\springcloud\cloud-alibaba-consumer-nacos-order84\src\main\java\com\yangkai\springcloud\alibaba\config\ApplicationContextConfig.java
+G:\微服务框架学习\springcloud\cloud-alibaba-consumer-nacos-order84\src\main\java\com\yangkai\springcloud\alibaba\service\PaymentFallbackService.java
+G:\微服务框架学习\springcloud\cloud-alibaba-consumer-nacos-order84\src\main\java\com\yangkai\springcloud\alibaba\service\PaymentService.java
+G:\微服务框架学习\springcloud\cloud-alibaba-consumer-nacos-order84\src\main\java\com\yangkai\springcloud\alibaba\controller\CircleBreakerController.java
